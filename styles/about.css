@@ -1,0 +1,86 @@
+@font-face {
+  font-family: tabs;
+  src: url('/assets/fonts/Vonique64.ttf');
+}
+
+@font-face {
+  font-family: heading;
+  font-size: 30px;
+  src: url('/assets/fonts/Vonique\ 64\ Bold.ttf');
+}
+
+body{
+  margin: 0px;
+  background-color: #01060d;
+}
+
+.container{
+  display: grid;
+
+  padding: 20px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 50px;
+
+  width: 100vw;
+  height: 100vh;
+}
+.about{
+  margin-left: 90px;
+}
+
+.about p{
+  color: white;
+}
+.about h1{
+  font-family: heading;
+}
+.navigation{
+
+  border-radius: 10px;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  display: flex;
+  background-color: #0d2840;
+}
+
+.footer{
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  margin: 0 -20px;
+  background-image: linear-gradient(#0d2840, #01060d);
+}
+ul {
+  list-style-type: none; /* remove bullet points */
+  margin: 0; /* remove margins */
+  padding: 0px; /* remove padding */
+
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+li {
+  float: left; /* align items horizontally */
+  border-radius: 50px;
+}
+
+a {
+  display: block; /* make the link fill the entire list item */
+  padding: 10px; /* add some space around the text */
+  text-decoration: none; /* remove the underline */
+  font-family: tabs;
+  font-size: 25px;
+  color: white; /* set the text color */
+}
+
+.ABOUT{
+  text-decoration: underline;
+}

@@ -1,0 +1,220 @@
+@font-face {
+  font-family: tabs;
+  src: url('assets/fonts/Vonique64.ttf');
+}
+
+@font-face {
+  font-family: heading;
+  src: url('/assets/fonts/Vonique\ 64\ Bold.ttf');
+}
+
+@font-face {
+  font-family: logo;
+  src: url('/assets/fonts/Vonique\ 64\ Bold\ Italic.ttf');
+}
+
+body{
+  margin: 0px;
+  background-color: #01060d;
+}
+
+.HOME{
+  text-decoration: underline;
+}
+.container{
+  display: grid;
+
+  padding: 20px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 50px;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.heading{
+  display: flex;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.heading a{
+  font-family: heading;
+  font-size: 70px;
+  padding: 10px;
+
+  text-shadow: 3px 2px 2px black;
+}
+
+.heading a:hover{
+  text-decoration: none;
+}
+
+.about{
+  display: grid;
+  margin-left: 90px;
+  margin-right: 90px;
+
+  gap: 10px;
+  padding: 20px;
+
+  grid-template-columns: repeat(3 ,1fr);
+  grid-template-rows: 80px 1fr;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.explore{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: blue;
+  border-radius: 10px;
+}
+.webdev{
+  
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row: span;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  border-radius: 20px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0),  #01060de3), url("/assets/images/webdev.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.gamedev{
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row: span;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.0);
+
+  border-radius: 20px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), #01060de3), url("/assets/images/gamedev.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.appdev{
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row: span;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  border-radius: 20px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), #01060de3), url("/assets/images/appdev.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navigation{
+
+  border-radius: 10px;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #0d2840;
+}
+
+.tabs{
+  padding: 12.5px;
+}
+
+.logo{
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: 12.5px;
+  font-size: 60px;
+
+  font-family: logo;
+
+  text-shadow: 5px 2px 5px black;
+}
+
+.footer{
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  margin: 0 -20px;
+  background-image: linear-gradient(#0d2840, #01060d);
+}
+
+.footer p{
+  text-align: center;
+  color: aliceblue;
+}
+
+ul {
+  list-style-type: none; /* remove bullet points */
+  margin: 0; /* remove margins */
+  padding: 0px; /* remove padding */
+
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+li {
+  float: left; /* align items horizontally */
+  border-radius: 50px;
+}
+
+a {
+  display: block; /* make the link fill the entire list item */
+  padding: 10px; /* add some space around the text */
+  text-decoration: none; /* remove the underline */
+  font-family: tabs;
+  font-size: 25px;
+  color: white; /* set the text color */
+}
+
+a:hover {
+  border-radius: 50px;
+  text-decoration: underline;
+}
+
+.appdev:hover{
+  scale: 1.025;
+
+  transition: scale 0.35s;
+}
+
+.webdev:hover{
+  scale: 1.025;
+  transition: scale 0.35s;
+}
+
+.gamedev:hover{
+  scale: 1.025;
+  transition: scale 0.35s;
+}
