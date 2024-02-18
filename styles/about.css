@@ -26,13 +26,30 @@ body{
   height: 100vh;
 }
 .about{
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 1fr;
   margin-left: 90px;
 }
 
 .about p{
+  grid-column-start: 1;
+  grid-column-end: 4;
   color: white;
 }
-.about h1{
+.logo{
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  color: grey;
+  text-shadow: 8px 2px 2px black;
+
+  padding-top: 60px ;
+  padding-bottom:20px ;
+  font-size: 100px;
   font-family: heading;
 }
 .navigation{

@@ -78,6 +78,11 @@ body{
   border-radius: 10px;
 }
 .webdev{
+
+  display: flex;
+
+  align-items: last baseline;
+  justify-content: center;
   
   grid-column-start: 1;
   grid-column-end: 2;
@@ -96,6 +101,12 @@ body{
 
 
 .gamedev{
+
+  display: flex;
+
+  align-items: last baseline;
+  justify-content: center;
+  
   grid-column-start: 2;
   grid-column-end: 3;
 
@@ -112,6 +123,12 @@ body{
 }
 
 .appdev{
+
+  display: flex;
+
+  align-items: last baseline;
+  justify-content: center;
+
   grid-column-start: 3;
   grid-column-end: 4;
 
@@ -201,6 +218,18 @@ a {
 a:hover {
   border-radius: 50px;
   text-decoration: underline;
+}
+
+.webdev a{
+  text-decoration: none;
+}
+
+.gamedev a{
+  text-decoration: none;
+}
+
+.appdev a{
+  text-decoration: none;
 }
 
 .appdev:hover{
