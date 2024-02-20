@@ -16,6 +16,8 @@
 body{
   margin: 0px;
   background-color: #01060d;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .HOME{
@@ -163,6 +165,8 @@ body{
 .logo{
   display: flex;
 
+  color: white;
+
   align-items: center;
   justify-content: flex-start;
 
@@ -246,4 +250,8 @@ a:hover {
 .gamedev:hover{
   scale: 1.025;
   transition: scale 0.35s;
+}
+
+@media(max-width: 600px){
+
 }
